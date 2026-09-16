@@ -12,7 +12,7 @@ in
           # lua
           ''
             require("oasis").setup{}
-            vim.cmd.colorscheme("oasis-moonlight")
+            vim.cmd.colorscheme("oasis-starlight")
           '';
       };
     };

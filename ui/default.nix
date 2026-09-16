@@ -15,10 +15,13 @@
 
     comments.comment-nvim.enable = true;
 
+    dashboard.alpha.enable = true;
+    #dashboard.dashboard-nvim.enable = true;
+
     # Navigation
     projects.project-nvim.enable = true;
     navigation.harpoon.enable = true;
-
+    binds.whichKey.enable = true;
     ui = {
       borders.enable = true;
       illuminate.enable = true;

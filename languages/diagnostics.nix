@@ -13,7 +13,7 @@
           },
           float = {
             border = "rounded",
-            source = true,
+            source = false,
           },
           signs = {
             text = {
