@@ -37,16 +37,24 @@
         system:
         let
           pkgs = p.${system};
+          neovimPkg = (mkNvf pkgs).neovim;
+          mkAlias =
+            name:
+            pkgs.writeShellApplication {
+              inherit name;
+              text = ''exec "${pkgs.lib.getExe neovimPkg}" "$@";'';
+            };
         in
         {
-          default = (mkNvf pkgs).neovim;
-          nvf = pkgs.writeShellApplication {
+          default = pkgs.symlinkJoin {
             name = "nvf";
-            text = ''
-              exec "${pkgs.lib.getExe self.packages.${system}.default}" "$@";
-            '';
+            paths = [
+              (mkAlias "nvf")
+              (mkAlias "vi")
+              (mkAlias "vim")
+            ];
           };
-          # A buildEnv of shell tools (unlike shell.nix, this populates result/bin), for CI
+          nvf-unwrapped = neovimPkg;
           shell = import ./shellEnv.nix { inherit pkgs; };
         }
       );

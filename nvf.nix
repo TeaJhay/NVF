@@ -3,10 +3,10 @@
     ./editing
     ./languages
     ./ui
-    ./keymaps.nix
   ];
   vim = {
     # Base Vim settings
+
     options = {
       # Basic
       matchtime = 2; # briefly jump to a matching bracket for 0.2s

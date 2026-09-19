@@ -85,6 +85,7 @@ in
           vim.keymap.set("n", "<leader>jbc", cmd.bookmark_create, { desc = "JJ bookmark create" })
           vim.keymap.set("n", "<leader>jbd", cmd.bookmark_delete, { desc = "JJ bookmark delete" })
           vim.keymap.set("n", "<leader>jbm", cmd.bookmark_move, { desc = "JJ bookmark move" })
+          vim.keymap.set("n", "<leader>jba", "<cmd>silent !jj bookmark advance<CR>", { desc = "JJ bookmark advance" })
           vim.keymap.set("n", "<leader>jts", cmd.tag_set, { desc = "JJ tag set" })
           vim.keymap.set("n", "<leader>jtd", cmd.tag_delete, { desc = "JJ tag delete" })
           vim.keymap.set("n", "<leader>jtp", cmd.tag_push, { desc = "JJ tag push" })
