@@ -8,7 +8,7 @@
       };
       format = {
         enable = true;
-        type = [ "nixfmt" ];
+        type = [ "alejandra" ];
       };
       lsp.servers = [ "nil" ];
     };

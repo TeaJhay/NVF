@@ -9,9 +9,28 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "d007badfa5920cb50e136d30a3edf4342093d6b5",
-      "url": "https://github.com/t-b-t-nchos/aquavium.nvim/archive/d007badfa5920cb50e136d30a3edf4342093d6b5.tar.gz",
-      "hash": "sha256-AtvAOiPqHDm49/bv8LovKPiMMJ/Yf6m24yOrOzZ8qnk="
+      "revision": "68a84c384292ccda0451be3db704195c5f263296",
+      "url": "https://github.com/t-b-t-nchos/aquavium.nvim/archive/68a84c384292ccda0451be3db704195c5f263296.tar.gz",
+      "hash": "sha256-GwkArExrFr3rpdnsoHchKwsUhsL87ZGumuEmu1KLd3E="
+    },
+    "jj.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "NicolasGB",
+        "repo": "jj.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "97e404ca8d41b94949cc9b1d07bcabd14c87c42f",
+      "url": "https://github.com/NicolasGB/jj.nvim/archive/97e404ca8d41b94949cc9b1d07bcabd14c87c42f.tar.gz",
+      "hash": "sha256-SQtmoj+FioiVWlPYjmpTFLSZPgbXNIYqLWnk7Up2SmI="
+    },
+    "nixpkgs": {
+      "type": "Channel",
+      "name": "nixos-unstable",
+      "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1075591.e554fab72f81/nixexprs.tar.xz",
+      "hash": "sha256-TAKa57gfBM/9a4IZrFaIQZhnHs9mXIFPlZbYrvhnaMY="
     },
     "oasis.nvim": {
       "type": "GitRelease",
@@ -30,5 +49,5 @@
       "hash": "sha256-Xf9nGBnD+h/9x6t2C3MdAvc0XtgMG6MkfHCb4Q34TnA="
     }
   },
-  "version": 8
+  "version": 7
 }
