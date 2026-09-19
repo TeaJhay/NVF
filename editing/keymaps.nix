@@ -34,13 +34,10 @@ in
     (mkBind "i" "<A-t>" "<C-v><Tab>")
     # Open Neotree
     (mkNBind "<leader>e" "<cmd>:Neotree focus<CR>")
-    (mkNBind "<M-w>" ":bdelete<CR>")
-    (mkNBind "<M-w>" ":bdelete<CR>")
-    (mkNBind "<M-w>" ":bdelete<CR>")
     (mkNBind "x" "<nop>")
-
-
-
+    # Open JJ
+    (mkNBind "<S-J>" ":J<CR>")
+    (mkNBind "j" "<nop>")
   ];
   vim.tabline.nvimBufferline.mappings.closeCurrent = "<leader>bx";
 }
