@@ -36,7 +36,7 @@ in
     (mkNBind "<leader>e" "<cmd>:Neotree focus<CR>")
     (mkNBind "x" "<nop>")
     # Open JJ
-    (mkNBind "<S-J>" ":J<CR>")
+    (mkNBind "jj" ":J<CR>")
     (mkNBind "j" "<nop>")
   ];
   vim.tabline.nvimBufferline.mappings.closeCurrent = "<leader>bx";

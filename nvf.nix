@@ -3,6 +3,7 @@
     ./editing
     ./languages
     ./ui
+    ./keymaps.nix
   ];
   vim = {
     # Base Vim settings
