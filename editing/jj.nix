@@ -92,6 +92,9 @@ in
           vim.keymap.set("n", "<leader>ja", cmd.abandon, { desc = "JJ abandon" })
           vim.keymap.set("n", "<leader>jf", cmd.fetch, { desc = "JJ fetch" })
           vim.keymap.set("n", "<leader>jp", cmd.push, { desc = "JJ push" })
+          vim.keymap.set("n", "<leader>jpp", function()
+            cmd.push({ remote = "origin" })
+          end, { desc = "JJ push all to origin" })
           vim.keymap.set("n", "<leader>jpr", cmd.open_pr, { desc = "JJ open PR from bookmark in current revision or parent" })
           vim.keymap.set("n", "<leader>jpl", function()
               cmd.open_pr { list_bookmarks = true }

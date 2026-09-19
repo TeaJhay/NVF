@@ -6,6 +6,7 @@
     ./nix.nix
     ./python.nix
     ./lua.nix
+    #    ./toml.nix
   ];
 
   vim = {
