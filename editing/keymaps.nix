@@ -38,6 +38,14 @@ in
     # Open JJ
     (mkNBind "jj" ":J<CR>")
     (mkNBind "j" "<nop>")
+    (mkNBind "esc" ":noh<CR>")
+    {
+      mode = "n";
+      key = "<A-Left>";
+      action = "ge";
+      silent = true;
+      desc = "Go to end of previous word";
+    }
   ];
   vim.tabline.nvimBufferline.mappings.closeCurrent = "<leader>bx";
 }
