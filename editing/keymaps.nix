@@ -38,7 +38,7 @@ in
     # Open JJ
     (mkNBind "jj" ":J<CR>")
     (mkNBind "j" "<nop>")
-    (mkNBind "esc" ":noh<CR>")
+    (mkNBind "<Esc>" ":noh<CR>")
     {
       mode = "n";
       key = "<A-Left>";
