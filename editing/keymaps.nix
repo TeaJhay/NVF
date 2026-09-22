@@ -1,3 +1,4 @@
+#
 let
   allModes = [
     "n"
@@ -16,8 +17,7 @@ let
   mkNBind = key: action: mkBind "n" key action;
   mkVBind = key: action: mkBind "v" key action;
   mkAllBind = key: action: mkBind allModes key action;
-in
-{
+in {
   vim.keymaps = [
     # Buffer Navigation
     (mkNBind "<M-w>" ":bdelete<CR>")
@@ -25,6 +25,10 @@ in
     (mkNBind "<M-.>" ":bnext<CR>")
     # Save/Quit
     (mkAllBind "<C-S>" "<cmd>write<cr>")
+    # Save and Quit
+    (mkAllBind "<C-X>" "<cmd>write<cr>:bdelete<cr>")
+    # Quit
+    (mkAllBind "<C-Q>" "<cmd>:q!<cr>")
     # Remove F1 for help
     (mkAllBind "<F1>" "<Nop>")
     # Move lines
