@@ -25,10 +25,12 @@ in {
     (mkNBind "<M-.>" ":bnext<CR>")
     # Save/Quit
     (mkAllBind "<C-S>" "<cmd>write<cr>")
-    # Save and Quit
+    # Save and Close Buffer
     (mkAllBind "<C-X>" "<cmd>write<cr>:bdelete<cr>")
     # Quit
     (mkAllBind "<C-Q>" "<cmd>:q!<cr>")
+    # Save and Quit
+    (mkAllBind "<M-Q>" "<cmd>write<cr>:q!<cr>")
     # Remove F1 for help
     (mkAllBind "<F1>" "<Nop>")
     # Move lines
