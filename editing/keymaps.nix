@@ -21,16 +21,17 @@ in {
   vim.keymaps = [
     # Buffer Navigation
     (mkNBind "<M-w>" ":bdelete<CR>")
-    (mkNBind "<M-,>" ":bprevious<CR>")
-    (mkNBind "<M-.>" ":bnext<CR>")
+    (mkAllBind "<leader>nn" "<cmd>:enew<CR>")
+    (mkNBind "<tab>" "<cmd>:bprevious<CR>")
+    (mkNBind "<S-tab>" "<cmd>:bnext<CR>")
     # Save/Quit
     (mkAllBind "<C-S>" "<cmd>write<cr>")
-    # Save and Close Buffer
-    (mkAllBind "<C-X>" "<cmd>write<cr>:bdelete<cr>")
+    # Close Buffer
+    (mkAllBind "<C-X>" "<cmd>:bdelete!<cr>")
     # Quit
     (mkAllBind "<C-Q>" "<cmd>:q!<cr>")
     # Save and Quit
-    (mkAllBind "<M-Q>" "<cmd>write<cr>:q!<cr>")
+    (mkAllBind "<M-q>" "<cmd>write<cr>:q!<cr>")
     # Remove F1 for help
     (mkAllBind "<F1>" "<Nop>")
     # Move lines
