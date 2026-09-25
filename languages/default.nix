@@ -21,7 +21,6 @@
       context.enable = false;
       fold = true;
     };
-
     lsp = {
       enable = true;
       formatOnSave = false;

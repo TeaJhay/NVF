@@ -4,22 +4,19 @@
       enable = true;
       extraDiagnostics = {
         enable = true;
-        types = [ "statix" ];
+        types = ["statix"];
       };
       format = {
         enable = true;
-        type = [ "alejandra" ];
+        type = ["alejandra"];
       };
-      lsp.servers = [ "nil" ];
+      lsp.servers = ["nixd"];
     };
+
     lsp.servers = {
-      nil = {
-        settings.nil = {
-          nix.flake = {
-            autoArchive = true;
-            nixpkgsInputName = "nixpkgs";
-            maxMemoryMB = 4096;
-          };
+      nixd = {
+        settings.nixd = {
+          formatting.command = ["alejandra"];
         };
       };
     };

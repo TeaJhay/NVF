@@ -21,7 +21,7 @@ in {
   vim.keymaps = [
     # Buffer Navigation
     (mkNBind "<M-w>" ":bdelete<CR>")
-    (mkAllBind "<leader>nn" "<cmd>:enew<CR>")
+    (mkNBind "<leader>nn" "<cmd>:enew<CR>")
     (mkNBind "<tab>" "<cmd>:bprevious<CR>")
     (mkNBind "<S-tab>" "<cmd>:bnext<CR>")
     # Save/Quit
