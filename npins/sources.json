@@ -26,6 +26,19 @@
       "url": "https://github.com/NicolasGB/jj.nvim/archive/97e404ca8d41b94949cc9b1d07bcabd14c87c42f.tar.gz",
       "hash": "sha256-SQtmoj+FioiVWlPYjmpTFLSZPgbXNIYqLWnk7Up2SmI="
     },
+    "matugen.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "Senal-D-A-Gunaratna",
+        "repo": "matugen.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "14e4585b12ec1ff095319d01794b655f629fa677",
+      "url": "https://github.com/Senal-D-A-Gunaratna/matugen.nvim/archive/14e4585b12ec1ff095319d01794b655f629fa677.tar.gz",
+      "hash": "sha256-Gr8RMJrVGk4UhLtosG/n+ngrlczdsHSO85U6aYO9Qhs="
+    },
     "nixpkgs": {
       "type": "Channel",
       "name": "nixos-unstable",

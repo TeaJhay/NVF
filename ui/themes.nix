@@ -6,7 +6,7 @@
   localPlugins = import ../vimPlugins.nix {inherit pkgs;};
 in {
   vim = {
-    theme.enable = false;
+    theme.enable = true;
 
     # base16-nvim just needs to be on the runtime path — matugen's generated
     # file is the one that calls require('base16-colorscheme').setup(...)
@@ -15,6 +15,10 @@ in {
     luaConfigRC.matugen = lib.nvim.dag.entryAfter ["pluginConfigs"] ''
       vim.opt.rtp:prepend(vim.fn.expand('~/.config/nvim'))
       require('matugen').setup()
+
+      if vim.g.my_transparent then
+        _G.MyTransparentApply(true)
+      end
     '';
     lazy.plugins =
       (with pkgs.vimPlugins; {

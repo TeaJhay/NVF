@@ -14,4 +14,5 @@ in {
   aquavium-nvim = mkPlugin "aquavium.nvim";
   oasis-nvim = mkPlugin "oasis.nvim";
   jj-nvim = mkPlugin "jj.nvim";
+  matugen-nvim = mkPlugin "matugen.nvim";
 }
