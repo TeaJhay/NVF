@@ -3,6 +3,7 @@
     languages.lua = {
       enable = true;
       format.enable = true; # registers stylua into conform for .lua files
+      treesitter.enable = true;
     };
 
     formatter.conform-nvim = {
@@ -22,7 +23,7 @@
           Lua = {
             format.enable = false; # belt-and-suspenders: lua_ls won't even offer to format
             workspace = {
-              library = [ "/run/current-system/sw/share/hypr/stubs" ];
+              library = ["/run/current-system/sw/share/hypr/stubs"];
               checkThirdParty = false;
             };
             diagnostics.globals = [

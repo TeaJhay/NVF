@@ -1,12 +1,11 @@
 {
-  pkgs ? import <nixpkgs> { },
-  extraPkgs ? [ ],
+  pkgs ? import <nixpkgs> {},
+  extraPkgs ? [],
 }:
 pkgs.buildEnv {
   name = "nvf-shell-tools";
-  pathsToLink = [ "/bin" ];
-  paths =
-    with pkgs;
+  pathsToLink = ["/bin"];
+  paths = with pkgs;
     [
       npins
       tack
@@ -18,6 +17,7 @@ pkgs.buildEnv {
       statix
       typos
       nil
+      alejandra
     ]
     ++ extraPkgs;
 }
