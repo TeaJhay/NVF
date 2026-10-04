@@ -17,7 +17,8 @@
 
     lsp = {
       enable = true;
-      servers.lua_ls = {
+      mappings.hover = null;
+      servers.lua-language-server = {
         enable = true;
         settings = {
           Lua = {

@@ -1,18 +1,20 @@
-{pkgs, ...}: let
-  npins = import ./npins;
-  mkPlugin = pname: let
-    src = npins.${pname};
+{
+  pkgs,
+  inputs ? import ./.tack,
+  ...
+}: let
+  mkPlugin = name: let
+    meta = inputs._meta.${name};
   in
     pkgs.vimUtils.buildVimPlugin {
-      inherit pname src;
-      version =
-        if src.type == "GitRelease"
-        then src.version
-        else src.revision;
+      pname = name;
+      src = inputs.${name};
+      version = meta.version or meta.tag or meta.rev or "git";
     };
 in {
   aquavium-nvim = mkPlugin "aquavium.nvim";
   oasis-nvim = mkPlugin "oasis.nvim";
   jj-nvim = mkPlugin "jj.nvim";
   matugen-nvim = mkPlugin "matugen.nvim";
+  sshfs-nvim = mkPlugin "sshfs.nvim";
 }

@@ -1,0 +1,75 @@
+{
+  "$declared": {
+    "aquavium.nvim": "github:t-b-t-nchos/aquavium.nvim",
+    "jj.nvim": "github:NicolasGB/jj.nvim",
+    "matugen.nvim": "github:Senal-D-A-Gunaratna/matugen.nvim",
+    "nixd": "github:nix-community/nixd",
+    "nixpkgs": "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz",
+    "nvf": "github:notashelf/nvf",
+    "oasis.nvim": "github:uhs-robert/oasis.nvim",
+    "sshfs.nvim": "github:uhs-robert/sshfs.nvim"
+  },
+  "aquavium.nvim": {
+    "type": "github",
+    "owner": "t-b-t-nchos",
+    "repo": "aquavium.nvim",
+    "rev": "ff76f104f00fdbbe7885398ea13a3baac0cd96a0",
+    "narHash": "sha256-Rja21BGCb3+4kYQLJc4xJIjulBYNsXpX9XTdNJtl/G0=",
+    "lastModified": 1791283648
+  },
+  "jj.nvim": {
+    "type": "github",
+    "owner": "NicolasGB",
+    "repo": "jj.nvim",
+    "rev": "64605c84f4e7774ff510d614204625ced87ffb48",
+    "narHash": "sha256-oObHuirHZxIZFbPsEFh7ei8dP+Yt8QZa+9ZhPvaEMOQ=",
+    "lastModified": 1791537903
+  },
+  "matugen.nvim": {
+    "type": "github",
+    "owner": "Senal-D-A-Gunaratna",
+    "repo": "matugen.nvim",
+    "rev": "27b2593c8bfcbd329da43f78d0d82fb4d1a5fea2",
+    "narHash": "sha256-U0CObdREGvd/Z4Bi8dDlf5mm/Mw/2F7dTxIP+86ajOs=",
+    "lastModified": 1790824829
+  },
+  "nixd": {
+    "type": "github",
+    "owner": "nix-community",
+    "repo": "nixd",
+    "rev": "bdb467082c4ecb467f7818f7a84d1f69db53784f",
+    "narHash": "sha256-rhfHJ+F9IU7G2pbRWnlyJvHEfwW7Ezm7SHhBrteoVYc=",
+    "lastModified": 1791202410
+  },
+  "nixpkgs": {
+    "type": "tarball",
+    "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1088030.8edc0c72e3a3/nixexprs.tar.xz?rev=8edc0c72e3a38faf5434e40d1f19431125fe4b30&lastModified=1791487292",
+    "rev": "8edc0c72e3a38faf5434e40d1f19431125fe4b30",
+    "narHash": "sha256-6BIvCXtdLW4HQwsOGkgH444aB3vCbHypE9TA78ireh8=",
+    "lastModified": 315532800
+  },
+  "nvf": {
+    "type": "github",
+    "owner": "notashelf",
+    "repo": "nvf",
+    "rev": "9723961413fcd7268f73e27c0277a6da307bbce7",
+    "narHash": "sha256-lKqmYifuU1gWhtmcgalvsk62zitc71fPX6wx9f6VX24=",
+    "lastModified": 1791602170
+  },
+  "oasis.nvim": {
+    "type": "github",
+    "owner": "uhs-robert",
+    "repo": "oasis.nvim",
+    "rev": "a3ef178fe47c69691e676a8da98ce5735c3013db",
+    "narHash": "sha256-3zsNcbKkrGQC+sVlr8IMv43OAJ+Y4q//O72ds4S1oeE=",
+    "lastModified": 1790358379
+  },
+  "sshfs.nvim": {
+    "type": "github",
+    "owner": "uhs-robert",
+    "repo": "sshfs.nvim",
+    "rev": "07fc74206d3bf7671e8b13aef2d0d871e0516746",
+    "narHash": "sha256-eRkBHyiAOBuFsfjnnw2UnZFiHh/DibHDcjwWDN/PT0g=",
+    "lastModified": 1790112738
+  }
+}

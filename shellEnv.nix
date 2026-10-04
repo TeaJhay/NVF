@@ -7,8 +7,6 @@ pkgs.buildEnv {
   pathsToLink = ["/bin"];
   paths = with pkgs;
     [
-      npins
-      tack
       mdformat
       nixfmt
       treefmt
@@ -16,8 +14,9 @@ pkgs.buildEnv {
       deadnix
       statix
       typos
-      nil
+      nixd
       alejandra
+      rustc
     ]
     ++ extraPkgs;
 }

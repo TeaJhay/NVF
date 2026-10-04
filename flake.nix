@@ -1,25 +1,11 @@
 {
   description = "NVF Flake";
 
-  inputs = {
-    nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz";
-    nvf = {
-      url = "github:notashelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs";
+  outputs = {self, ...} @ args: let
+    inputs = (import ./.tack) {
+      overrides = args.tackOverrides or {};
     };
-    nixd = {
-      #nixd language server
-      url = "github:nix-community/nixd";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-  };
-
-  outputs = {
-    self,
-    nixd,
-    nixpkgs,
-    nvf,
-  }: let
+    inherit (inputs) nixpkgs nvf;
     forAllSystems = nixpkgs.lib.genAttrs [
       "x86_64-linux"
       "aarch64-linux"

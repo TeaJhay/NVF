@@ -1,0 +1,37 @@
+[shorturls]
+gh = "github:{path}"
+channel = "https://channels.nixos.org/{path}/nixexprs.tar.xz"
+[all_follow]
+nixpkgs = "nixpkgs"
+[omit_inputs]
+[signers]
+[inputs]
+
+[inputs."aquavium.nvim"]
+url = "github:t-b-t-nchos/aquavium.nvim"
+type = "fetch"
+[inputs."jj.nvim"]
+url = "github:NicolasGB/jj.nvim"
+type = "fetch"
+
+[inputs."matugen.nvim"]
+url = "github:Senal-D-A-Gunaratna/matugen.nvim"
+type = "fetch"
+
+[inputs.nixpkgs]
+url = "channel:nixpkgs-unstable"
+
+[inputs."oasis.nvim"]
+url = "github:uhs-robert/oasis.nvim"
+type = "fetch"
+
+[inputs."sshfs.nvim"]
+url = "github:uhs-robert/sshfs.nvim"
+type = "fetch"
+
+[inputs.nixd]
+url = "github:nix-community/nixd"
+
+[inputs.nvf]
+url = "github:notashelf/nvf"
+

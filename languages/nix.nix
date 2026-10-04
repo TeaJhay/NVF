@@ -18,6 +18,9 @@
         settings.nixd = {
           formatting.command = ["alejandra"];
         };
+        nixpkgs = {
+          expr = "import <nixpkgs> { }";
+        };
       };
     };
     luaConfigRC.snix-filetype = ''

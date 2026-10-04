@@ -6,6 +6,7 @@
     ./nix.nix
     ./python.nix
     ./lua.nix
+    ./rust.nix
     #    ./toml.nix
   ];
 
@@ -26,6 +27,8 @@
       formatOnSave = false;
       lightbulb.enable = true; # Shows a lightbulb when code actions are available
       otter-nvim.enable = true; # Runs proper LSP inside codeblocks
+      inlayHints.enable = true;
+      trouble.enable = true;
     };
   };
 }

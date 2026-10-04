@@ -1,11 +1,11 @@
 let
   useMini = false;
-in
-{
+in {
   vim = {
     mini = {
       statusline.enable = useMini;
       tabline.enable = useMini;
+      move.enable = true;
     };
 
     tabline.nvimBufferline = {
