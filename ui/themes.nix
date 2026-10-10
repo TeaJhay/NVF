@@ -93,7 +93,7 @@ in {
         'SignColumn', 'LineNr', 'CursorLineNr',
         'FoldColumn', 'VertSplit', 'WinSeparator',
         -- dropbar renders its breadcrumbs in the winbar row
-        'WinBar', 'WinBarNC', 'NeoTreeNormal',
+        'WinBar', 'WinBarNC', 'NeoTreeNormal', 'NeoTreeNormalNC', 'NeoTreeEndOfBuffer',
       }
 
       -- BufferLine tab bar transparency is a two-step job:

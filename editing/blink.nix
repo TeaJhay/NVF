@@ -2,14 +2,25 @@
   pkgs,
   lib,
   ...
-}:
-{
+}: {
   vim = {
     autocomplete = {
       enableSharedCmpSources = true;
       blink-cmp = {
         enable = true;
         friendly-snippets.enable = true;
+
+        setupOpts = {
+          cmdline = {
+            completion = {
+              list.selection = {
+                preselect = false;
+                auto_insert = true;
+              };
+              menu.auto_show = true;
+            };
+          };
+        };
       };
     };
     # I do not wish to constantly recompile it
