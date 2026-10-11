@@ -3,6 +3,12 @@
     utility.oil-nvim = {
       enable = true;
       gitStatus.enable = true;
+      setupOpts = {
+        keymaps = {
+          "-" = "actions.parent";
+          "<BS>" = "actions.parent";
+        };
+      };
     };
     keymaps = [
       {
