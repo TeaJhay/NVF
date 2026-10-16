@@ -8,6 +8,7 @@
     ./lua.nix
     ./rust.nix
     #    ./toml.nix
+    ./web.nix
   ];
 
   vim = {
