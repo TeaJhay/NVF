@@ -26,6 +26,10 @@ group = "Plugins"
 url = "github:NicolasGB/jj.nvim"
 type = "fetch"
 group = "Plugins"
+[inputs."rustlings.nvim"]
+url = "github:martifaj/rustlings.nvim"
+type = "fetch"
+group = "Plugins"
 
 # plugins for themes
 [inputs."matugen.nvim"]

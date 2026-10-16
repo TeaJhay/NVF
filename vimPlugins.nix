@@ -17,4 +17,5 @@ in {
   jj-nvim = mkPlugin "jj.nvim";
   matugen-nvim = mkPlugin "matugen.nvim";
   sshfs-nvim = mkPlugin "sshfs.nvim";
+  rustlings-nvim = mkPlugin "rustlings.nvim";
 }
