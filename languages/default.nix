@@ -1,4 +1,6 @@
-{
+{lib, ...}: let
+  inherit (lib.generators) mkLuaInline;
+in {
   imports = [
     ./diagnostics.nix
     ./keymaps.nix
@@ -7,7 +9,6 @@
     ./python.nix
     ./lua.nix
     ./rust.nix
-    #    ./toml.nix
     ./web.nix
   ];
 
@@ -31,5 +32,26 @@
       inlayHints.enable = true;
       trouble.enable = true;
     };
+    autocmds = [
+      # Example 1: Using a Lua callback
+      {
+        event = ["CursorHold"];
+        desc = "Notify after saving Lua file";
+        callback = mkLuaInline ''
+          function()
+              local opts = {
+                focusable = false,
+                close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+                border = 'rounded',
+                source = 'always',
+                prefix = ' ',
+                scope = 'cursor',
+              }
+              vim.diagnostic.open_float(nil, opts)
+              vim.lsp.buf.hover()
+            end
+        '';
+      }
+    ];
   };
 }
