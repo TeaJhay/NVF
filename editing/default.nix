@@ -5,5 +5,6 @@
     ./oil.nix
     ./jj.nix
     ./sshfs.nix
+    ./ccc.nix
   ];
 }
