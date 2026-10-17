@@ -2,10 +2,13 @@
   localPlugins = import ../vimPlugins.nix {inherit pkgs;};
 in {
   vim = {
+    extraPackages = [pkgs.rustlings];
     extraPlugins = {
-      # Becomes the default theme
-      sshfs = {
-        package = localPlugins.sshfs-nvim;
+      plenary = {
+        package = localPlugins.plenary-nvim;
+      };
+      rustlings = {
+        package = localPlugins.rustlings-nvim;
         setup =
           # lua
           ''
