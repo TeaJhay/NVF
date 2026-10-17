@@ -7,6 +7,8 @@
     "nixpkgs": "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz",
     "nvf": "github:notashelf/nvf",
     "oasis.nvim": "github:uhs-robert/oasis.nvim",
+    "plenary.nvim": "github:nvim-lua/plenary.nvim",
+    "rustlings.nvim": "github:martifaj/rustlings.nvim",
     "sshfs.nvim": "github:uhs-robert/sshfs.nvim"
   },
   "aquavium.nvim": {
@@ -43,18 +45,18 @@
   },
   "nixpkgs": {
     "type": "tarball",
-    "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1088030.8edc0c72e3a3/nixexprs.tar.xz?rev=8edc0c72e3a38faf5434e40d1f19431125fe4b30&lastModified=1791487292",
-    "rev": "8edc0c72e3a38faf5434e40d1f19431125fe4b30",
-    "narHash": "sha256-6BIvCXtdLW4HQwsOGkgH444aB3vCbHypE9TA78ireh8=",
-    "lastModified": 315532800
+    "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1093421.f20cd90e28fe/nixexprs.tar.xz?rev=f20cd90e28fe0403873f473b29e42662cd86e8c4&lastModified=1792116957",
+    "rev": "f20cd90e28fe0403873f473b29e42662cd86e8c4",
+    "narHash": "sha256-MTJCMrhDFb+GRbLxBPTp8kB4dDlO+egmQ5qsJgYuaWw=",
+    "lastModified": 1792116957
   },
   "nvf": {
     "type": "github",
     "owner": "notashelf",
     "repo": "nvf",
-    "rev": "9723961413fcd7268f73e27c0277a6da307bbce7",
-    "narHash": "sha256-lKqmYifuU1gWhtmcgalvsk62zitc71fPX6wx9f6VX24=",
-    "lastModified": 1791602170
+    "rev": "a736b60b1e2019931168979951c94dc46e342957",
+    "narHash": "sha256-XD64JVLV8iE4lR+W5gkTweEaT+SBwOrSy0+le2WgITI=",
+    "lastModified": 1792175215
   },
   "oasis.nvim": {
     "type": "github",
@@ -63,6 +65,22 @@
     "rev": "a3ef178fe47c69691e676a8da98ce5735c3013db",
     "narHash": "sha256-3zsNcbKkrGQC+sVlr8IMv43OAJ+Y4q//O72ds4S1oeE=",
     "lastModified": 1790358379
+  },
+  "plenary.nvim": {
+    "type": "github",
+    "owner": "nvim-lua",
+    "repo": "plenary.nvim",
+    "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
+    "narHash": "sha256-nkfETDkPiE+Kd2BWYZijgUp9bP8RgFwRmvqJz2BMuq4=",
+    "lastModified": 1775800366
+  },
+  "rustlings.nvim": {
+    "type": "github",
+    "owner": "martifaj",
+    "repo": "rustlings.nvim",
+    "rev": "c503a0efbbf232fee1e9f344eaa38109466acef8",
+    "narHash": "sha256-Mfm6oWnfVJqBzO2w5cNBlohg+2LEBCiWfao70Ml4E8s=",
+    "lastModified": 1767607334
   },
   "sshfs.nvim": {
     "type": "github",

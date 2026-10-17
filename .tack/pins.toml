@@ -30,7 +30,10 @@ group = "Plugins"
 url = "github:martifaj/rustlings.nvim"
 type = "fetch"
 group = "Plugins"
-
+[inputs."plenary.nvim"]
+url = "github:nvim-lua/plenary.nvim"
+type = "fetch"
+group = "Plugins"
 # plugins for themes
 [inputs."matugen.nvim"]
 url = "github:Senal-D-A-Gunaratna/matugen.nvim"
