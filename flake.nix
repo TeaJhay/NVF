@@ -5,6 +5,20 @@
     inputs = (import ./.tack) {
       overrides = args.tackOverrides or {};
     };
+    inherit (nixpkgs) lib;
+    assimilate = d:
+      builtins.readDir d
+      |> builtins.mapAttrs (name: type:
+        if lib.hasPrefix "_" name
+        then []
+        else if type == "directory"
+        then assimilate (d + "/${name}")
+        else if lib.hasSuffix ".nix" name
+        then [(d + "/${name}")]
+        else [])
+      |> builtins.attrValues
+      |> builtins.concatLists;
+
     inherit (inputs) nixpkgs nvf;
     forAllSystems = nixpkgs.lib.genAttrs [
       "x86_64-linux"
@@ -16,9 +30,11 @@
     mkNvf = pkgs:
       nvf.lib.neovimConfiguration {
         inherit pkgs;
-        modules = [./nvf.nix];
+        modules = [./nvf.nix] ++ lib.concatMap assimilate [./editing ./languages ./ui];
+        extraSpecialArgs = {inherit assimilate;};
       };
   in {
+    lib.assimilate = assimilate;
     # For Config Sampling
     config = mkNvf p.x86_64-linux;
     packages = forAllSystems (

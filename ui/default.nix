@@ -1,12 +1,4 @@
 {
-  imports = [
-    ./fzflua.nix
-    ./neotree.nix
-    ./themes.nix
-    ./transparent.nix
-    ./lines.nix
-  ];
-
   vim = {
     # No dashboard and suppress the default splash screen
     luaConfigRC.options = ''

@@ -1,8 +1,5 @@
-{ lib, ... }: {
+{lib, ...}: {
   imports = [
-    ./editing
-    ./languages
-    ./ui
   ];
   vim = {
     # Base Vim settings
@@ -75,7 +72,6 @@
         "gitcommit"
       ];
     };
-
 
     telescope.enable = true;
     terminal.toggleterm = {

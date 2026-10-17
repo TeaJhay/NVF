@@ -1,17 +1,6 @@
 {lib, ...}: let
   inherit (lib.generators) mkLuaInline;
 in {
-  imports = [
-    ./diagnostics.nix
-    ./keymaps.nix
-    ./go.nix
-    ./nix.nix
-    ./python.nix
-    ./lua.nix
-    ./rust.nix
-    ./web.nix
-  ];
-
   vim = {
     languages = {
       enableTreesitter = true;
