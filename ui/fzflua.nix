@@ -2,8 +2,7 @@
   pkgs,
   lib,
   ...
-}:
-let
+}: let
   mkFzfBind = keys: action: {
     mode = "n";
     key = "<leader>${keys}";
@@ -17,8 +16,7 @@ let
       ".direnv"
       ".arc"
     ]);
-in
-{
+in {
   vim = {
     fzf-lua = {
       enable = true;
@@ -28,10 +26,9 @@ in
     };
 
     keymaps = [
-      (mkFzfBind "f" "files")
-      (mkFzfBind "/" "live_grep")
-      (mkFzfBind ";" "resume")
-      (mkFzfBind "cs" "colorschemes")
+      (mkFzfBind "fzf" "files")
+      (mkFzfBind "fz/" "live_grep")
+      (mkFzfBind "fz;" "resume")
       (mkFzfBind "gs" "git_status")
       (mkFzfBind "gd" "git_diff")
       (mkFzfBind "gb" "git_branches")

@@ -61,7 +61,7 @@
 
     git = {
       enable = true;
-      git-conflict.enable = true;
+      git-conflict.enable = false;
       gitsigns.enable = true;
     };
 
@@ -76,7 +76,7 @@
     telescope.enable = true;
     terminal.toggleterm = {
       enable = true;
-      lazygit.enable = true;
+      lazygit.enable = false;
     };
   };
 }

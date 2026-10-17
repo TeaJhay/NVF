@@ -1,5 +1,6 @@
-{
+{pkgs, ...}: {
   vim = {
+    extraPackages = [pkgs.alejandra];
     languages.nix = {
       enable = true;
       extraDiagnostics = {

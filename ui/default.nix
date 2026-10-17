@@ -12,7 +12,7 @@
 
     # Navigation
     projects.project-nvim.enable = true;
-    navigation.harpoon.enable = true;
+    navigation.harpoon.enable = false;
     binds.whichKey.enable = true;
     ui = {
       borders.enable = true;
