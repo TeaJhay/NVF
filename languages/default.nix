@@ -21,24 +21,43 @@ in {
       inlayHints.enable = true;
       trouble.enable = true;
     };
-    autocmds = [
-      # Example 1: Using a Lua callback
+    luaConfigRC.hoverDocs = lib.nvim.dag.entryAnywhere ''
+      vim.g.hover_docs = false
+
+      local function toggle_hover_docs()
+        vim.g.hover_docs = not vim.g.hover_docs
+        vim.notify("Hover docs: " .. (vim.g.hover_docs and "on" or "off"))
+      end
+
+      vim.api.nvim_create_user_command("HoverDocsToggle", toggle_hover_docs, {})
+      vim.keymap.set("n", "<leader>k", toggle_hover_docs, { desc = "Toggle hover docs" })
+    '';
+
+    augroups = [
       {
+        name = "Docs";
+        clear = true;
+      }
+    ];
+
+    autocmds = [
+      {
+        group = "Docs";
         event = ["CursorHold"];
-        desc = "Notify after saving Lua file";
+        desc = "Show attribute documentation";
         callback = mkLuaInline ''
           function()
-              local opts = {
-                focusable = false,
-                close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
-                border = 'rounded',
-                source = 'always',
-                prefix = ' ',
-                scope = 'cursor',
-              }
-              vim.diagnostic.open_float(nil, opts)
-              vim.lsp.buf.hover()
-            end
+            if not vim.g.hover_docs then return end
+            vim.diagnostic.open_float(nil, {
+              focusable = false,
+              close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+              border = "rounded",
+              source = "always",
+              prefix = " ",
+              scope = "cursor",
+            })
+            vim.lsp.buf.hover()
+          end
         '';
       }
     ];
