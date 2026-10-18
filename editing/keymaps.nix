@@ -27,11 +27,11 @@ in {
       # Save/Quit
       (mkAllBind "<C-s>" "<cmd>write<cr>" "Write buffer")
       # Close Buffer
-      (mkNBind "<C-x>" "<cmd>:bdelete!<cr>" "Force close buffer")
+      (mkNBind "<C-x>" "<cmd>:lua require('bufdelete').bufdelete(0, true)<cr>" "Force close buffer")
       # Quit
-      (mkNBind "<C-q>" "<cmd>:q!<cr>" "Quit neovim")
+      (mkNBind "<C-q>" "<cmd>:qa!<cr>" "Quit neovim")
       # Save and Quit
-      (mkAllBind "<M-q>" "<cmd>write<cr>:q!<cr>" "Write and quit")
+      (mkAllBind "<M-q>" "<cmd>write<cr>:q<cr>" "Write and quit")
       # Remove F1 for help
       (mkAllBind "<F1>" "<Nop>" "Disable F1 key")
       # Move lines
