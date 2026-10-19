@@ -27,7 +27,7 @@ jobs:
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
 
       - name: tack update
-        run: nix run github:manic-systems/tack -- update
+        run: nix --accept-flake-config run github:manic-systems/tack -- update
 
       - name: Create pull request
         id: cpr
