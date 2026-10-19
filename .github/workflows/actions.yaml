@@ -2,10 +2,16 @@
 name: Nvim Check
 "on":
   pull_request:
+  push:
+    branches: [master, main]
   workflow_dispatch:
 jobs:
   nvim-checks:
     runs-on: ubuntu-latest
+    if: >-
+      github.event_name != 'push' ||
+      !startsWith(github.event.head_commit.message, 'chore: update tacks')
+    timeout-minutes: 30
     continue-on-error: true
     steps:
       - name: Checkout
