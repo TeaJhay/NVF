@@ -15,7 +15,7 @@
         mode = "n";
         key = "-";
         action = "<CMD>Oil<CR>";
-        desc = "Open Oil file navigaton";
+        desc = "Open Oil file navigation";
         silent = true;
       }
     ];

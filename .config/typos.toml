@@ -1,3 +1,7 @@
+[files] 
+#exclude keys markdown file.
+extend-exclude = ["nvim_keys_sorted_v2.md"]
+
 [type.nix]
 # Catch the UUIDs for my drives currently
 extend-glob = ["*filesystems.nix"]
@@ -19,8 +23,8 @@ thumbnailers = "thumbnailers"
 # vscode extensions
 routeros = "routeros"
 metaphore = "metaphore"
-# Shorthand used in Gnupg and my key finder
-fpr = "fpr"
+# open new buffer command
+enew = "enew"
 
 [default]
 extend-ignore-identifiers-re = ['LESS_TERMCAP_\w+$']
