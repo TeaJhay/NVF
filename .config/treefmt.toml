@@ -1,11 +1,13 @@
 # Stick with the main project files for now
-excludes = ["*.lock", ".gitignore", ".envrc", "npins/**", ".config/**", ".github/**"]
+excludes = ["*.lock", ".gitignore", ".envrc", ".tack/**", ".config/**", ".github/**"]
 on-unmatched = "warn"
 
 [formatter.nixfmt]
 command = "alejandra"
 includes = ["*.nix"]
 
-[formatter.mdformat]
-command = "mdformat"
-includes = ["*.md"]
+[formatter.deno]
+command = "deno"
+options = [ "fmt" ]
+includes = [ "*.md" ]
+excludes = [ ".tack/*" ]

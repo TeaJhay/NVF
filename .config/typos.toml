@@ -1,6 +1,6 @@
 [files] 
 #exclude keys markdown file.
-extend-exclude = ["nvim_keys_sorted_v2.md"]
+extend-exclude = ["nvim_keys_sorted_v2.md", ".tack/"]
 
 [type.nix]
 # Catch the UUIDs for my drives currently

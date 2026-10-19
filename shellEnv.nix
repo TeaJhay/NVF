@@ -7,7 +7,7 @@ pkgs.buildEnv {
   pathsToLink = ["/bin"];
   paths = with pkgs;
     [
-      mdformat
+      deno
       nixfmt
       treefmt
       lefthook
