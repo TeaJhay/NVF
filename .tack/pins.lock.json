@@ -9,7 +9,8 @@
     "oasis.nvim": "github:uhs-robert/oasis.nvim",
     "plenary.nvim": "github:nvim-lua/plenary.nvim",
     "rustlings.nvim": "github:martifaj/rustlings.nvim",
-    "sshfs.nvim": "github:uhs-robert/sshfs.nvim"
+    "sshfs.nvim": "github:uhs-robert/sshfs.nvim",
+    "tack": "github:manic-systems/tack"
   },
   "aquavium.nvim": {
     "type": "github",
@@ -89,5 +90,13 @@
     "rev": "07fc74206d3bf7671e8b13aef2d0d871e0516746",
     "narHash": "sha256-eRkBHyiAOBuFsfjnnw2UnZFiHh/DibHDcjwWDN/PT0g=",
     "lastModified": 1790112738
+  },
+  "tack": {
+    "type": "github",
+    "owner": "manic-systems",
+    "repo": "tack",
+    "rev": "d785e637b7f6d0694a53951588c484f32397335e",
+    "narHash": "sha256-q3o87E0s55Z09YVhFJtws2Dvv1IRCoGxOOtomZsJEXA=",
+    "lastModified": 1792090744
   }
 }
