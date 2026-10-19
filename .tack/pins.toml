@@ -14,6 +14,11 @@ group = "Base"
 url = "github:notashelf/nvf"
 group = "Base"
 
+
+[inputs.tack]
+url = "github:manic-systems/tack"
+group = "Test"
+
 # Specific plugins for editing and functions
 [inputs."sshfs.nvim"]
 url = "github:uhs-robert/sshfs.nvim"
@@ -34,6 +39,7 @@ group = "Plugins"
 url = "github:nvim-lua/plenary.nvim"
 type = "fetch"
 group = "Plugins"
+
 # plugins for themes
 [inputs."matugen.nvim"]
 url = "github:Senal-D-A-Gunaratna/matugen.nvim"
