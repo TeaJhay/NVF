@@ -1,1 +1,1 @@
-ignore = ['.direnv', 'npins', '_sources']
+ignore = ['.direnv', 'npins', '_sources', '.tack']
