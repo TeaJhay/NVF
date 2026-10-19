@@ -33,4 +33,4 @@ jobs:
       - name: Check Flake
         run: nix flake check
       - name: Check Nvim
-        run: nix run .#nvf -- --headless "+qa"
+        run: nix run . -- --headless "+qa"
