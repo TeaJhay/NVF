@@ -23,9 +23,9 @@
     "type": "github",
     "owner": "NicolasGB",
     "repo": "jj.nvim",
-    "rev": "5dd959c1f385f2a297010de3575d1c00999db9f4",
-    "narHash": "sha256-GNAuHOVUVF/zFkWBT0H3kgTE828x7nseend7TdQkckA=",
-    "lastModified": 1792574563
+    "rev": "9b1dca730f459b664f8a03f93e0d282693d7d5f8",
+    "narHash": "sha256-RDubGBSchaq8wWY063wlGu8wLPZDiZGPKCvplJJAzak=",
+    "lastModified": 1792771082
   },
   "matugen.nvim": {
     "type": "github",
