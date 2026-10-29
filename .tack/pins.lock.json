@@ -45,10 +45,10 @@
   },
   "nixpkgs": {
     "type": "tarball",
-    "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1103464.f05535a0efcb/nixexprs.tar.xz?rev=f05535a0efcb2134c478d1e88434fadf486d42b5&lastModified=1793136825",
-    "rev": "f05535a0efcb2134c478d1e88434fadf486d42b5",
-    "narHash": "sha256-8VGQQhZfWvvWCoqOf5lb8AzUVbKJKvnihiXwJKKPH0s=",
-    "lastModified": 1793136825
+    "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1104102.e62746b0b472/nixexprs.tar.xz?rev=e62746b0b472753ef019baceab6f1e2e52014980&lastModified=1793225069",
+    "rev": "e62746b0b472753ef019baceab6f1e2e52014980",
+    "narHash": "sha256-GYpArmwi/iMuX2ov31oCBhAXRMJdNX9kOl2LZHCuR6M=",
+    "lastModified": 1793225069
   },
   "nvf": {
     "type": "github",
