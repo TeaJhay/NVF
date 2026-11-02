@@ -31,9 +31,9 @@
     "type": "github",
     "owner": "Senal-D-A-Gunaratna",
     "repo": "matugen.nvim",
-    "rev": "27b2593c8bfcbd329da43f78d0d82fb4d1a5fea2",
-    "narHash": "sha256-U0CObdREGvd/Z4Bi8dDlf5mm/Mw/2F7dTxIP+86ajOs=",
-    "lastModified": 1790824829
+    "rev": "8e42f63f9da5013f824a3bef106d4863b844377f",
+    "narHash": "sha256-GcxtY4IFgr5W1/ICquM6gnNQVB6yOQOmicsknwms3/c=",
+    "lastModified": 1793626871
   },
   "nixd": {
     "type": "github",
@@ -45,10 +45,10 @@
   },
   "nixpkgs": {
     "type": "tarball",
-    "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1106208.d357a2b54f0b/nixexprs.tar.xz?rev=d357a2b54f0b6dc4aeb4e993190a52cf151b6f24&lastModified=1793494649",
-    "rev": "d357a2b54f0b6dc4aeb4e993190a52cf151b6f24",
-    "narHash": "sha256-gh035dq/sQ/OwPltGyvjNl1zNWZgVnng2zug7xKqSu8=",
-    "lastModified": 1793494649
+    "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1106677.5c9de89ec55b/nixexprs.tar.xz?rev=5c9de89ec55bff981cb8da1a4ee92b10f1438ffc&lastModified=1793582901",
+    "rev": "5c9de89ec55bff981cb8da1a4ee92b10f1438ffc",
+    "narHash": "sha256-TmjnoezEMTuSmEjtCa9gTaK6hLOFJv+ZvIDCu5s9vec=",
+    "lastModified": 1793582901
   },
   "nvf": {
     "type": "github",
@@ -86,8 +86,8 @@
     "type": "github",
     "owner": "uhs-robert",
     "repo": "sshfs.nvim",
-    "rev": "07fc74206d3bf7671e8b13aef2d0d871e0516746",
-    "narHash": "sha256-eRkBHyiAOBuFsfjnnw2UnZFiHh/DibHDcjwWDN/PT0g=",
-    "lastModified": 1790112738
+    "rev": "a4c61a8b49639dbd37d0c272e0f93a5ffe85e81d",
+    "narHash": "sha256-DxV1nVB+OqpFOFAn8MtH4pJc6TCboSD5cQnK+oz9d6g=",
+    "lastModified": 1793644527
   }
 }
