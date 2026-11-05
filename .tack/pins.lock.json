@@ -45,10 +45,10 @@
   },
   "nixpkgs": {
     "type": "tarball",
-    "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1107841.9d3b8db48266/nixexprs.tar.xz?rev=9d3b8db48266c17be0b5f9c6360c3ecfbac3d1f5&lastModified=1793735720",
-    "rev": "9d3b8db48266c17be0b5f9c6360c3ecfbac3d1f5",
-    "narHash": "sha256-WqewjvVjGQ1yhAvxeZW7IKoIT08vUNfyaeZewOwyYxg=",
-    "lastModified": 1793735720
+    "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1108269.13e53762c5af/nixexprs.tar.xz?rev=13e53762c5afaf384d4614e94527a9ccfafe41d0&lastModified=1793795574",
+    "rev": "13e53762c5afaf384d4614e94527a9ccfafe41d0",
+    "narHash": "sha256-ey4jOibbc003QnvG+D7j8S5w2m33vf0S800hWUMoDOI=",
+    "lastModified": 1793795574
   },
   "nvf": {
     "type": "github",
@@ -62,9 +62,13 @@
     "type": "github",
     "owner": "uhs-robert",
     "repo": "oasis.nvim",
-    "rev": "a3ef178fe47c69691e676a8da98ce5735c3013db",
-    "narHash": "sha256-3zsNcbKkrGQC+sVlr8IMv43OAJ+Y4q//O72ds4S1oeE=",
-    "lastModified": 1790358379
+    "rev": "171689960eeec9f3ad1e8686a20f6db780a6c72c",
+    "narHash": "sha256-zE+OndGbp7kyiAA5GnG+EcRL8SynM7YF/0XnqP3ngok=",
+    "lastModified": 1793902617,
+    "archive": {
+      "hash": "sha256-Nuy60xMp1vt/lZKFdUs21UkaJ1CrXtTT/dcamSgtUlU=",
+      "outHash": "sha256-7Dy7dgoHIJdqpgIJypOPJoT8CpElxEmJVDs+OoG8YDo="
+    }
   },
   "plenary.nvim": {
     "type": "github",
